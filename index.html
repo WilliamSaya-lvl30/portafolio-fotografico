@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Dinamico</title>
+    <link rel="stylesheet" href="estiloPortafolio.css">
+    <link href="https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="contenedor">
+        <header>
+            <div class="logo">
+                <h1>Portafolio Fotografico</h1>
+                <h2>Williams Saya</h2>
+                <p>Desarrollador web en formacion</p>
+            </div>
+            <form action="">
+                <input type="text" class="barra-buscar" id="barra-buscar" placeholder="Buscar">
+            </form>
+            <div class="categorias">
+                <a href="#" class="active">Todos</a>
+                <a href="#">Naturaleza</a>
+                <a href="#">Ciudades</a>
+                <a href="#">Personas</a>
+            
+            </div>
+        </header>
+
+        <div class="grid">
+            <div class="item" 
+                data-categoria="ciudades" 
+                data-etiquetas="ciudades puente paisajes"
+                data-descripcion="1.San Francisco"
+            >
+                <div class="item-content">
+                    <img src="img/san Francisco.jpg" alt="">
+
+                </div>
+            </div>
+
+            <div class="item" 
+                data-categoria="personas" 
+                data-etiquetas="personas mujer madre bebe"
+                data-descripcion="2.Madre e hijo"
+            >
+                <div class="item-content">
+                    <img src="img/madre y bebe .jpg" alt="">
+
+                </div>
+            </div>
+
+            <div class="item" 
+                data-categoria="personas ciudades" 
+                data-etiquetas="personas ciudades mujer vestido"
+                data-descripcion="3.Women in the city"
+            >
+                <div class="item-content">
+                    <img src="img/women city.jpeg" alt="">
+
+                </div>
+            </div>
+
+            <div class="item" 
+                data-categoria="naturaleza" 
+                data-etiquetas="naturaleza girasoles paisaje"
+                data-descripcion="4.Campo de girasoles"
+            >
+                <div class="item-content">
+                    <img src="img/campo girasoles.jpg" alt="">
+
+                </div>
+            </div>
+
+            <div class="item" 
+                data-categoria="naturaleza" 
+                data-etiquetas="naturaleza arboles flores cerezo"
+                data-descripcion="5.Flor de cerezo"
+            >
+                <div class="item-content">
+                    <img src="img/cerezo.jpeg" alt="">
+
+                </div>
+            </div>
+
+            <div class="item" 
+                data-categoria="ciudades" 
+                data-etiquetas="ciudades arquitectura foto"
+                data-descripcion="6.Retratando arte"
+            >
+                <div class="item-content">
+                    <img src="img/david-monje-foto.jpg" alt="">
+
+                </div>
+            </div>
+
+            <div class="item" 
+                data-categoria="ciudades" 
+                data-etiquetas="ciudades puente paisajes"
+                data-descripcion="7.Puente de new york"
+            >
+                <div class="item-content">
+                    <img src="img/karim-manjra-sC5ekjSF21w-unsplash.jpg" alt="">
+
+                </div>
+            </div>
+
+            <div class="item" 
+                data-categoria="personas" 
+                data-etiquetas="personas paisajes sunset"
+                data-descripcion="8.Jump"
+            >
+                <div class="item-content">
+                    <img src="img/saltando en la playa.jpg" alt="">
+
+                </div>
+            </div>
+
+            <div class="item" 
+                data-categoria="personas" 
+                data-etiquetas="personas sunset arena"
+                data-descripcion="9.Sunset"
+            >
+                <div class="item-content">
+                    <img src="img/sunset.jpg" alt="">
+
+                </div>
+            </div>
+
+            <div class="item" 
+                data-categoria="personas" 
+                data-etiquetas="personas mujer"
+                data-descripcion="10.Hister Women"
+            >
+                <div class="item-content">
+                    <img src="img/women1.jpeg" alt="">
+
+                </div>
+            </div>
+
+            <div class="item" 
+                data-categoria="personas" 
+                data-etiquetas="personas ciudades neon barba"
+                data-descripcion="11.Hister Man"
+            >
+                <div class="item-content">
+                    <img src="img/hombre neon.jpeg" alt="">
+
+                </div>
+            </div>
+            
+            
+        </div>
+
+        <section class="overlay" id="overlay">
+            <div class="contenedor-img">
+                <button id="btn-cerrar"><i class="fas fa-times"></i></i></button>
+                <img src="" alt="">
+            </div>
+            <p class="descripcion">
+              </p>
+        </section>
+
+        <footer class="contenedor">
+            <div class="redes-sociales">
+                <div class="contenedor-icono">
+                    <a href="https://www.facebook.com/willian.saya/" class="facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                </div>
+                <div class="contenedor-icono">
+                    <a href="https://www.instagram.com/hunter.x.williams/?hl=es-la" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+                <div class="contenedor-icono">
+                    <a href="https://www.linkedin.com/in/williams-saya/" target="_blank" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <div class="contenedor-icono">
+                    <a href="https://twitter.com/login?lang=es" target="_blank" class="twitter"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+
+            <div class="creado-por">
+                <p>Sitio creado por Williams Saya</p>
+            </div>
+        </footer>
+
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/web-animations-js@2.3.2/web-animations.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/muuri@0.9.3/dist/muuri.min.js"></script>
+    <script src="https://kit.fontawesome.com/febdede1e2.js" crossorigin="anonymous"></script>
+    <script src="portafolioDinamico.js"></script>
+</body>
+</html>
